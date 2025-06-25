@@ -2,6 +2,16 @@ import React from 'react';
 import { Users, Target, Award, Globe, Zap, Heart } from 'lucide-react';
 
 const About = () => {
+  const team = [
+    {
+      name: "Abdulrahman Abdulrahman",
+      role: "Founder & CEO",
+      bio: "AI researcher with 10+ years experience in machine learning and synthetic data generation.",
+      image: "ceo"
+    }
+  
+  ]
+
   const values = [
     {
       icon: Zap,
@@ -56,7 +66,7 @@ const About = () => {
   const partners = [
     "YALI Network",
     "CELOHA",
-    "Kwaai AI Lab"
+    "Kwaai AI Lab",
   ];
 
   return (
