@@ -224,11 +224,11 @@ const Projects = () => {
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">25+</div>
               <div className="text-gray-600">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">100K+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10K+</div>
               <div className="text-gray-600">Users Impacted</div>
             </div>
             <div className="text-center">

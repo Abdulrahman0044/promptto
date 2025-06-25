@@ -1,80 +1,100 @@
 import React, { useState } from 'react';
 import { Calendar, User, ArrowRight, Search, Filter, Tag } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: "The Future of Synthetic Data in AI Training",
+    excerpt: "Exploring how synthetic datasets are revolutionizing machine learning while addressing privacy and bias concerns in AI development.",
+    category: "AI Research",
+    author: "Abdulrahman Abdulrahman",
+    date: "December 15, 2024",
+    readTime: "8 min read",
+    tags: ["AI", "Machine Learning", "Data Privacy"],
+    featured: true,
+    content: `Artificial Intelligence is evolving faster than ever. But behind every smart AI system—whether it's detecting diseases, driving cars, or chatting like a human—there’s one thing it desperately needs: data.
+
+Traditionally, we've relied on real-world data. But real data is messy. It's often biased, incomplete, hard to collect, and tied up in privacy concerns. That’s where synthetic data steps in—not just as a substitute, but as a revolution.
+
+Synthetic data is artificially generated data that mimics real-world information. Think of it as creating a digital twin of real data without the risks. It helps businesses train AI models faster, cheaper, and more ethically—especially when privacy is at stake, or when data is scarce or sensitive.
+
+Imagine training an AI to diagnose a rare disease. Instead of waiting years to gather real patient data, we can generate realistic patient profiles and symptoms synthetically. It saves time, respects privacy, and scales like magic.
+
+At PromptTo, we believe the future of AI training will rely heavily on synthetic data—especially in Africa, where access to large, clean datasets is a major challenge. With synthetic data, we can level the playing field. Startups, researchers, and governments alike can build powerful AI systems without compromising ethics or inclusivity.
+
+This is more than a technical shift. It's a human shift—toward equity, privacy, and possibility.
+
+The future of synthetic data in AI training? It’s not just coming. It’s already here.`
+  },
+  {
+    id: 2,
+    title: "How IoT Transformed a Smart Farm in Lagos",
+    excerpt: "A deep dive into our 7FarmScale deployment, showcasing 40% increased crop yield through intelligent monitoring and automation.",
+    category: "Case Studies",
+    author: "Abdulrahman Abdulrahman",
+    date: "December 10, 2024",
+    readTime: "12 min read",
+    tags: ["IoT", "Agriculture", "Case Study"],
+    featured: true,
+    content: `This is the full article for 'How IoT Transformed a Smart Farm in Lagos'. Replace this with the actual writeup.`
+  },
+  {
+    id: 3,
+    title: "5 Essential Steps for Nigerian Tech Startups",
+    excerpt: "Key insights from our accelerator program on building successful tech ventures in the Nigerian market and beyond.",
+    category: "Startups",
+    author: "Auwal Yunusa",
+    date: "December 8, 2024",
+    readTime: "6 min read",
+    tags: ["Startups", "Nigeria", "Entrepreneurship"],
+    featured: false,
+    content: `This is the full article for '5 Essential Steps for Nigerian Tech Startups'. Replace this with the actual writeup.`
+  },
+  {
+    id: 4,
+    title: "Building Scalable IoT Architectures",
+    excerpt: "Technical deep-dive into designing IoT systems that can handle thousands of devices while maintaining reliability and security.",
+    category: "IoT",
+    author: "Auwal Yunusa",
+    date: "December 5, 2024",
+    readTime: "10 min read",
+    tags: ["IoT", "Architecture", "Scalability"],
+    featured: false,
+    content: `This is the full article for 'Building Scalable IoT Architectures'. Replace this with the actual writeup.`
+  },
+  {
+    id: 5,
+    title: "AI-Powered Web Development: A New Era",
+    excerpt: "How artificial intelligence is transforming web development workflows and enabling faster, smarter application creation.",
+    category: "Tutorials",
+    author: "Abdulrahman Abdulrahman",
+    date: "December 3, 2024",
+    readTime: "7 min read",
+    tags: ["AI", "Web Development", "Tutorial"],
+    featured: false,
+    content: `This is the full article for 'AI-Powered Web Development: A New Era'. Replace this with the actual writeup.`
+  },
+  {
+    id: 6,
+    title: "Aquaculture Revolution with Smart Technology",
+    excerpt: "Examining how our Smart Pond system is transforming fish farming in Nigeria with IoT sensors and predictive analytics.",
+    category: "Case Studies",
+    author: "Abdulrahman Abdulrahman",
+    date: "May 28, 2025",
+    readTime: "9 min read",
+    tags: ["IoT", "Aquaculture", "Innovation"],
+    featured: false,
+    content: `This is the full article for 'Aquaculture Revolution with Smart Technology'. Replace this with the actual writeup.`
+  }
+];
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
 
   const categories = ['All', 'AI Research', 'IoT', 'Startups', 'Case Studies', 'Tutorials'];
-
-  const blogPosts = [
-    {
-      id: 1,
-      title: "The Future of Synthetic Data in AI Training",
-      excerpt: "Exploring how synthetic datasets are revolutionizing machine learning while addressing privacy and bias concerns in AI development.",
-      category: "AI Research",
-      author: "Abdulrahman Abdulrahman",
-      date: "December 15, 2024",
-      readTime: "8 min read",
-      tags: ["AI", "Machine Learning", "Data Privacy"],
-      featured: true
-    },
-    {
-      id: 2,
-      title: "How IoT Transformed a Smart Farm in Lagos",
-      excerpt: "A deep dive into our 7FarmScale deployment, showcasing 40% increased crop yield through intelligent monitoring and automation.",
-      category: "Case Studies",
-      author: "Abdulrahman Abdulrahman",
-      date: "December 10, 2024",
-      readTime: "12 min read",
-      tags: ["IoT", "Agriculture", "Case Study"],
-      featured: true
-    },
-    {
-      id: 3,
-      title: "5 Essential Steps for Nigerian Tech Startups",
-      excerpt: "Key insights from our accelerator program on building successful tech ventures in the Nigerian market and beyond.",
-      category: "Startups",
-      author: "Auwal Yunusa",
-      date: "December 8, 2024",
-      readTime: "6 min read",
-      tags: ["Startups", "Nigeria", "Entrepreneurship"],
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Building Scalable IoT Architectures",
-      excerpt: "Technical deep-dive into designing IoT systems that can handle thousands of devices while maintaining reliability and security.",
-      category: "IoT",
-      author: "Auwal Yunusa",
-      date: "December 5, 2024",
-      readTime: "10 min read",
-      tags: ["IoT", "Architecture", "Scalability"],
-      featured: false
-    },
-    {
-      id: 5,
-      title: "AI-Powered Web Development: A New Era",
-      excerpt: "How artificial intelligence is transforming web development workflows and enabling faster, smarter application creation.",
-      category: "Tutorials",
-      author: "Abdulrahman Abdulrahman",
-      date: "December 3, 2024",
-      readTime: "7 min read",
-      tags: ["AI", "Web Development", "Tutorial"],
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Aquaculture Revolution with Smart Technology",
-      excerpt: "Examining how our Smart Pond system is transforming fish farming in Nigeria with IoT sensors and predictive analytics.",
-      category: "Case Studies",
-      author: "Abdulrahman Abdulrahman",
-      date: "May 28, 2025",
-      readTime: "9 min read",
-      tags: ["IoT", "Aquaculture", "Innovation"],
-      featured: false
-    }
-  ];
 
   const filteredPosts = blogPosts.filter(post => {
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
@@ -156,7 +176,7 @@ const Blog = () => {
                         <span className="text-gray-400">•</span>
                         <span className="text-sm text-gray-600">{post.readTime}</span>
                       </div>
-                      <button className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-semibold">
+                      <button onClick={() => navigate(`/blog/${post.id}`)} className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 font-semibold">
                         <span>Read More</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
@@ -202,7 +222,7 @@ const Blog = () => {
                       <User className="w-3 h-3" />
                       <span>{post.author}</span>
                     </div>
-                    <button className="text-blue-600 hover:text-blue-700 text-sm font-semibold">
+                    <button onClick={() => navigate(`/blog/${post.id}`)} className="text-blue-600 hover:text-blue-700 text-sm font-semibold">
                       Read More
                     </button>
                   </div>

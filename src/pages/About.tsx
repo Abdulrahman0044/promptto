@@ -239,10 +239,10 @@ const About = () => {
             Whether you're a startup founder, enterprise leader, or aspiring technologist, there's a place for you in the PromptTo community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold">
+            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold" ref="#">
               Work With Us
             </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all">
+            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all" href='#'>
               Join Our Team
             </button>
           </div>

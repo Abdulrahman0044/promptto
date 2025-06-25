@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 import Learn from './pages/Learn';
 import Accelerator from './pages/Accelerator';
 import About from './pages/About';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/learn" element={<Learn />} />
           <Route path="/accelerator" element={<Accelerator />} />
           <Route path="/about" element={<About />} />
