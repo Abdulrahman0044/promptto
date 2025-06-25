@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // for Vite
+    "./**/*.{js,ts,jsx,tsx}" // for CRA or Next.js
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}

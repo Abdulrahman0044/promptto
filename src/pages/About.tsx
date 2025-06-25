@@ -2,33 +2,6 @@ import React from 'react';
 import { Users, Target, Award, Globe, Zap, Heart } from 'lucide-react';
 
 const About = () => {
-  const team = [
-    {
-      name: "Dr. Adebayo Ogundimu",
-      role: "Founder & CEO",
-      bio: "AI researcher with 10+ years experience in machine learning and synthetic data generation.",
-      image: "ceo"
-    },
-    {
-      name: "Kemi Adebisi",
-      role: "CTO",
-      bio: "Full-stack developer and IoT specialist, leading our technical innovation.",
-      image: "cto"
-    },
-    {
-      name: "Chidi Okafor",
-      role: "Head of Accelerator",
-      bio: "Serial entrepreneur with experience building and scaling tech startups in Nigeria.",
-      image: "accelerator"
-    },
-    {
-      name: "Fatima Hassan",
-      role: "Lead IoT Engineer",
-      bio: "Hardware and software integration expert specializing in smart agriculture solutions.",
-      image: "iot"
-    }
-  ];
-
   const values = [
     {
       icon: Zap,
@@ -54,24 +27,24 @@ const About = () => {
 
   const milestones = [
     {
-      year: "2020",
+      year: "2024",
       title: "PromptTo Founded",
       description: "Started with a vision to democratize AI and IoT technology in Nigeria"
     },
     {
-      year: "2021",
+      year: "2024",
       title: "First IoT Deployment",
-      description: "Launched 7FarmScale, our smart agriculture monitoring system"
+      description: "Deployed 7FarmScale, our smart agriculture monitoring system"
     },
     {
-      year: "2022",
-      title: "Accelerator Program",
-      description: "Launched startup accelerator program for Nigerian founders"
+      year: "2024",
+      title: "AI4All Summit",
+      description: "Pivoted AI Summit in partnership with YALI Network, Kano"
     },
     {
-      year: "2023",
-      title: "25 Startups Accelerated",
-      description: "Reached milestone of supporting 25+ early-stage startups"
+      year: "2024",
+      title: "Pond IoT Deployment",
+      description: "Deployed Pondawatts, a fish pond monitoring system"
     },
     {
       year: "2024",
@@ -81,12 +54,9 @@ const About = () => {
   ];
 
   const partners = [
-    "Kwaai",
+    "YALI Network",
     "CELOHA",
-    "Nigerian Tech Hub",
-    "Lagos Innovation Center",
-    "African Development Bank",
-    "TechStars"
+    "Kwaai AI Lab"
   ];
 
   return (

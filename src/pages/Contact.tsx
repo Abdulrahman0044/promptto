@@ -36,14 +36,14 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       description: "Speak with our team directly",
-      contact: "+234 800 000 0000",
-      action: "tel:+2348000000000"
+      contact: "+234 906 802 9427",
+      action: "tel:+2349068029427"
     },
     {
       icon: MapPin,
       title: "Visit Us",
       description: "Our headquarters in Nigeria",
-      contact: "Lagos, Nigeria",
+      contact: "Kano, Nigeria",
       action: "#"
     }
   ];
