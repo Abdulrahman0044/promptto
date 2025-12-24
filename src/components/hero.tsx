@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Stars } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import bgVideo from "/assets/background.mp4";
@@ -68,8 +68,8 @@ function Hero() {
         <div className="relative z-20 min-h-screen bg-[#0D1027]/80 flex flex-col">
           {/* Banner */}
           <div className="bg-blue-600/80 text-white text-center py-3">
-            <p className="text-sm font-medium">
-              ✨ Novetiv is coming soon – Stay tuned for exciting updates!
+            <p className="text-sm font-medium flex gap-2 justify-center">
+              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is coming soon – Stay tuned for exciting updates!
             </p>
           </div>
 
