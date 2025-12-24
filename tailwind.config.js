@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         // gradient btn background
         "gradient-btn": "linear-gradient(to bottom, #0057FF, #A0A7E6)",
+        "bg-pattern": "url(/bg.png)"
       },
     },
   },

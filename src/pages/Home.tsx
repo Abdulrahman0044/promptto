@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Starts/>
+      <Starts />
       <Services />
       <Projects />
       <Cta />

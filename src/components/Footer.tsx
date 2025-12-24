@@ -55,13 +55,13 @@ const Footer = () => {
             <h3 className="font-bold text-gray-900 mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-blue-600" />
+                <Mail className="w-4 h-4 text-[#0D1027]" />
                 <a href="mailto:prompttodev@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors">
-                  prompttodev@gmail.com
+                  hello@promptto.co
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-blue-600" />
+                <MapPin className="w-4 h-4 text-[#0D1027]" />
                 <span className="text-gray-600">Kano, Nigeria</span>
               </li>
             </ul>
