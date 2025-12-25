@@ -2,18 +2,20 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // for Vite
-    "./**/*.{js,ts,jsx,tsx}", // for CRA or Next.js
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      colors:{
+        "priColor": "#0D1027",
+        "colorBg":"#FAFBFF"
+      },
       fontFamily: {
         sans: ["Raleway", "ui-sans-serif", "system-ui"],
       },
       backgroundImage: {
-        // gradient btn background
         "gradient-btn": "linear-gradient(to bottom, #0057FF, #A0A7E6)",
-        "bg-pattern": "url(/bg.png)"
+        "bg-pattern": "url('/bg.png')",
       },
     },
   },

@@ -5,7 +5,7 @@ const projects = [
   {
     id: "7farmscale",
     name: "7FarmScale",
-    headerIcon: Cpu,
+    headerIcon: "/farm.svg",
     headerType: "icon",
     headerGradient: "from-[#0D1027] to-blue-800",
     title: "Smart Agriculture Platform",
@@ -18,7 +18,7 @@ const projects = [
   {
     id: "novetiv",
     name: "Novetiv",
-    headerIcon: "/novetiv logo.png",
+    headerIcon: "/novlogo.svg",
     headerType: "image",
     headerGradient: "from-[#0D1027] to-blue-800",
     title: "AI Innovation Platform",
@@ -30,7 +30,7 @@ const projects = [
   {
     id: "smart-pond",
     name: "Smart Pond",
-    headerIcon: Database,
+    headerIcon: "/agric.svg",
     headerType: "icon",
     headerGradient: "from-[#0D1027] to-blue-800",
     title: "Aquaculture Monitoring",
@@ -65,24 +65,22 @@ function Projects() {
             return (
               <div
                 key={project.id}
-                className="bg-white rounded-xl overflow-hidden border border-gray-200 
+                className="bg-white rounded-md overflow-hidden border border-gray-200 
                            shadow-sm hover:shadow-sm transition-all transform hover:-translate-y-2"
               >
                 {/* Header */}
                 <div
-                  className={`h-48 bg-gradient-to-b ${project.headerGradient} 
+                  className={`h-48 bg-[#0D1027] 
                               flex items-center justify-center`}
                 >
-                  <div className="text-center text-white">
-                    {project.headerType === "icon" ? (
-                      <Icon className="w-16 h-16 mx-auto mb-4" />
-                    ) : (
+                  <div className="text-center text-blue-400">
+                     
                       <img
                         src={Icon}
                         alt={`${project.name} logo`}
                         className="w-16 h-16 mx-auto mb-4 object-contain"
                       />
-                    )}
+                    
                     <h4 className="text-xl font-bold">{project.name}</h4>
                   </div>
                 </div>

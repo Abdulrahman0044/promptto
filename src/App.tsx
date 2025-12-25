@@ -16,7 +16,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[#FAFBFF] font-sans antialiased">
+      <div className="min-h-screen bg-colorBg font-sans antialiased">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

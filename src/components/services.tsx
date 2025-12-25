@@ -87,12 +87,12 @@ function Services() {
             return (
               <div
                 key={service.id}
-                className="bg-white rounded-xl p-8 border border-gray-200 
+                className="bg-white rounded-md p-8 border border-gray-200 
                            transition-all transform hover:-translate-y-2 
                            hover:shadow-sm group"
               >
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#0D1027] rounded-xl flex items-center justify-center 
+                  <div className="w-12 h-12 bg-[#0D1027] rounded-md flex items-center justify-center 
                                   flex-shrink-0 transition-transform group-hover:scale-110">
                     <Icon className="w-6 h-6 text-blue-300" />
                   </div>

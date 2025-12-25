@@ -20,9 +20,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center">
             <img
-              src="/Promptto.png"
+              src="/Promptto-w.png"
               alt="PromptTo Logo"
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
           </Link>
 
