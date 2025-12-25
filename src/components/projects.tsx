@@ -74,13 +74,12 @@ function Projects() {
                               flex items-center justify-center`}
                 >
                   <div className="text-center text-blue-400">
-                     
-                      <img
-                        src={Icon}
-                        alt={`${project.name} logo`}
-                        className="w-16 h-16 mx-auto mb-4 object-contain"
-                      />
-                    
+                    <img
+                      src={Icon}
+                      alt={`${project.name} logo`}
+                      className="w-16 h-16 mx-auto mb-4 object-contain"
+                    />
+
                     <h4 className="text-xl font-bold">{project.name}</h4>
                   </div>
                 </div>
