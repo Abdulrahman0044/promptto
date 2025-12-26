@@ -29,8 +29,8 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch for general inquiries",
-      contact: "prompttodev@gmail.com",
-      action: "mailto:prompttodev@gmail.com"
+      contact: "hello@promptto.co",
+      action: "mailto:hello@promptto.co"
     },
     {
       icon: Phone,
