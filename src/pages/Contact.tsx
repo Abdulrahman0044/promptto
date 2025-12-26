@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Let's Build the Future Together
@@ -80,9 +80,9 @@ const Contact = () => {
             {contactMethods.map((method, index) => {
               const IconComponent = method.icon;
               return (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 text-center hover:shadow-xl transition-all hover:-translate-y-1">
-                  <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-white" />
+                <div key={index} className="bg-white rounded-xl p-6 shadow-xm border border-gray-200 text-center hover:shadow-xl transition-all hover:-translate-y-1">
+                  <div className="w-16 h-16 bg-priColor rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-8 h-8 text-blue-300" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{method.title}</h3>
                   <p className="text-gray-600 mb-4">{method.description}</p>
@@ -109,7 +109,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+          <div className="bg-white rounded-xl shadow-xm border border-gray-200 p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -276,28 +276,28 @@ const Contact = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-white rounded-lg p-6 shadow-lg border border-gray-200">
+            <div className="bg-white rounded-lg p-6 shadow-xm border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">How long does a typical project take?</h3>
               <p className="text-gray-600">
                 Project timelines vary based on complexity. IoT deployments typically take 4-8 weeks, web development projects 6-12 weeks, and AI training programs 8-16 weeks.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-lg border border-gray-200">
+            <div className="bg-white rounded-lg p-6 shadow-xm border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Do you work with international clients?</h3>
               <p className="text-gray-600">
                 Yes, while we're based in Nigeria, we work with clients globally. We have experience delivering projects across Africa, Europe, and North America.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-lg border border-gray-200">
+            <div className="bg-white rounded-lg p-6 shadow-xm border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">What's included in your accelerator program?</h3>
               <p className="text-gray-600">
                 Our 16-week accelerator includes mentorship, MVP development support, market validation, funding preparation, and access to our network of investors and partners.
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-6 shadow-lg border border-gray-200">
+            <div className="bg-white rounded-lg p-6 shadow-xm border border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-2">Can you help with ongoing maintenance and support?</h3>
               <p className="text-gray-600">
                 Absolutely. We offer comprehensive maintenance and support packages for all our solutions, including 24/7 monitoring, regular updates, and technical support.
