@@ -72,29 +72,29 @@ export const SERVICES = [
     primaryCta: "Build With Us",
     secondaryCta: "View Portfolio",
   },
-  {
-    id: "accelerator",
-    title: "Startup Acceleration & MVP Engineering",
-    description:
-      "We help early-stage founders move from idea to validated product with technical depth and real mentorship.",
-    icon: Rocket,
-    bullets: [
-      {
-        title: "Expert Mentorship",
-        desc: "Direct access to experienced builders",
-      },
-      {
-        title: "MVP Development",
-        desc: "Rapid, scalable product foundations",
-      },
-      {
-        title: "Product Validation",
-        desc: "Testing assumptions before scaling",
-      },
-    ],
-    primaryCta: "Apply to Accelerator",
-    secondaryCta: "Success Stories",
-  },
+  // {
+  //   id: "accelerator",
+  //   title: "Startup Acceleration & MVP Engineering",
+  //   description:
+  //     "We help early-stage founders move from idea to validated product with technical depth and real mentorship.",
+  //   icon: Rocket,
+  //   bullets: [
+  //     {
+  //       title: "Expert Mentorship",
+  //       desc: "Direct access to experienced builders",
+  //     },
+  //     {
+  //       title: "MVP Development",
+  //       desc: "Rapid, scalable product foundations",
+  //     },
+  //     {
+  //       title: "Product Validation",
+  //       desc: "Testing assumptions before scaling",
+  //     },
+  //   ],
+  //   primaryCta: "Apply to Accelerator",
+  //   secondaryCta: "Success Stories",
+  // },
 ];
 
 const Services = () => {

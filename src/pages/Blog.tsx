@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const blogPosts = [
   {
-    id: 1,
+    id: syntheticdata,
     title: "The Future of Synthetic Data in AI Training",
     excerpt: "Exploring how synthetic datasets are revolutionizing machine learning while addressing privacy and bias concerns in AI development.",
     category: "AI Research",

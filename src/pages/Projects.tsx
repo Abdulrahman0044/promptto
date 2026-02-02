@@ -45,7 +45,6 @@ const Projects = () => {
       technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
       status: "Coming Soon",
       metrics: {
-        models: "50+",
         users: "Beta",
         accuracy: "95%",
       },
@@ -61,7 +60,7 @@ const Projects = () => {
       technologies: ["IoT Sensors", "Python", "Vue.js", "InfluxDB", "Grafana"],
       status: "Live",
       metrics: {
-        ponds: "8+",
+        ponds: "3+",
         mortality: "-25%",
         efficiency: "+35%",
       },

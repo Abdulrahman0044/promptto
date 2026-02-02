@@ -13,7 +13,7 @@ function cta({
   title = "Ready to Transform Your Business?",
   subtitle = "Join hundreds of companies and startups who trust PromptTo for their AI, IoT, and technology needs.",
   action1 = "Get Started Today",
-  action2 = " Join Our Accelerator",
+  action2 = " Explore our services",
   showTwoActions = true,
 }: ctaInterface) {
   return (
@@ -34,7 +34,7 @@ function cta({
           </Link>
           {showTwoActions && (
             <Link
-              to="/accelerator"
+              to="/services"
               className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white  transition-all"
             >
               {action2}

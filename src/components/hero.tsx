@@ -69,7 +69,7 @@ function Hero() {
           {/* Banner */}
           <div className="bg-blue-600/80 text-white text-center py-3">
             <p className="text-sm font-medium flex gap-2 justify-center">
-              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is coming soon – Stay tuned for exciting updates!
+              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is now in testing mode!
             </p>
           </div>
 
@@ -109,10 +109,10 @@ function Hero() {
                 </Link>
 
                 <Link
-                  to="/accelerator"
+                  to="/projects"
                   className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all"
                 >
-                  Join the Accelerator
+                  Explore our Projects
                 </Link>
               </div>
             </div>

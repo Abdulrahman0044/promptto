@@ -9,7 +9,7 @@ const ChatWidget = () => {
       {isOpen && (
         <div className="mb-4 w-80 h-96 bg-white rounded-lg shadow-xl border border-gray-200">
           <div className="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
-            <h3 className="font-semibold">Ask PromptTo</h3>
+            {/* <h3 className="font-semibold">Ask PromptTo</h3> */}
             <button onClick={() => setIsOpen(false)}>
               <X className="w-5 h-5" />
             </button>
@@ -39,7 +39,7 @@ const ChatWidget = () => {
         className="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-110 flex items-center space-x-2"
       >
         <MessageCircle className="w-6 h-6" />
-        <span className="hidden sm:block">Ask PromptTo</span>
+        <span className="hidden sm:block">Ask Our Chatbot</span>
       </button>
     </div>
   );

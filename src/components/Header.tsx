@@ -70,12 +70,12 @@ const Header = () => {
                   >
                     Web Development
                   </a>
-                  <a
+                  {/* <a
                     href="#accelerator"
                     className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded"
                   >
                     Startup Accelerator
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Header = () => {
             >
               Blog
             </Link>
-            <Link
+            {/* <Link
               to="/learn"
               className={`transition-colors ${
                 isActive("/learn")
@@ -118,8 +118,8 @@ const Header = () => {
               }`}
             >
               Accelerator
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/about"
               className={`transition-colors ${
                 isActive("/about")
@@ -128,7 +128,7 @@ const Header = () => {
               }`}
             >
               About
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className={`transition-colors ${
@@ -191,7 +191,7 @@ const Header = () => {
             >
               Blog
             </Link>
-            <Link
+            {/* <Link
               to="/learn"
               className="block px-3 py-2 text-gray-400 hover:text-blue-600 transition-colors"
             >
@@ -208,7 +208,7 @@ const Header = () => {
               className="block px-3 py-2 text-gray-400 hover:text-blue-600 transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="block px-3 py-2 text-gray-400 hover:text-blue-600 transition-colors"
