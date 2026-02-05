@@ -68,9 +68,9 @@ function Hero() {
         <div className="relative z-20 min-h-screen bg-[#0D1027]/80 flex flex-col">
           {/* Banner */}
           <div className="bg-blue-600/80 text-white text-center py-3">
-            <p className="text-sm font-medium flex gap-2 justify-center">
-              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is now in testing mode!
-            </p>
+            <a href="https://novetiv.com" className="text-sm font-medium flex gap-2 justify-center">
+              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is now in the beta testing mode!
+            </a> 
           </div>
 
           {/* Hero Content */}

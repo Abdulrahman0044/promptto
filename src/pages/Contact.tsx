@@ -52,7 +52,6 @@ const Contact = () => {
     "AI Training & Research",
     "IoT Solutions",
     "Web Development",
-    "Startup Accelerator",
     "Synthetic Data Generation",
     "Consultation",
     "Partnership",
