@@ -69,7 +69,7 @@ function Hero() {
           {/* Banner */}
           <div className="bg-blue-600/80 text-white text-center py-3">
             <a href="https://novetiv.com" className="text-sm font-medium flex gap-2 justify-center">
-              <Stars fill="#ffff" className="w-5 h-5"/> Novetiv is now in the beta testing mode!
+              <Stars fill="#ffff" className="w-5 h-5"/> Try Novetiv
             </a> 
           </div>
 
